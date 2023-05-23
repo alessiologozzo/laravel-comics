@@ -37,6 +37,4 @@
             </div>
         </div>
     </div>
-
-    <a href="{{route('show',  0)}}">prova</a>
 @endsection
