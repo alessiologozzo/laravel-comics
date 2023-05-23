@@ -20,9 +20,5 @@ Route::get('/', function () {
 Route::get("/comics/{index}", function ($index) {
     $comics = config("data.comics");
     $comic = $comics[$index];
-    return view("show", ["comic" => $comic, "links" => config("data.links"), "comics" => config("data.comics"), "categories" => config("data.categories"), "dcComics" => config("data.dcComics"), "shops" => config("data.shops"), "dcs" => config("data.dcs"), "sites" => config("data.sites")]);
+    return view("show", ["comic" => $comic, "links" => config("data.links"), "categories" => config("data.categories"), "dcComics" => config("data.dcComics"), "shops" => config("data.shops"), "dcs" => config("data.dcs"), "sites" => config("data.sites")]);
 })->name("show");
-
-
-
-// return redirect()->route("home");
