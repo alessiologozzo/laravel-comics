@@ -140,6 +140,11 @@ a{
 .al-ps{
     padding-left: 0.1rem;
 }
+
+h5{
+    margin-bottom: 0;
+}
+
 @media screen and (min-width: 992px){
     .al-col-lg{
     width: calc(100% / 5);
